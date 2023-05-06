@@ -3,9 +3,7 @@ import mongoose from "mongoose";
 
 const ItemSchema = new mongoose.Schema({
        
-      
-    itens: [
-        {
+    
     
             name: {
                 type: String,
@@ -19,13 +17,12 @@ const ItemSchema = new mongoose.Schema({
                 type: Number,
                 required: true,
             },
-            expirationAT:{
+            expirationAt:{
                 type: String,
+                required: true,
                 
             }
         },
-    ],
-},
 {
     timestamps:true,
 }
